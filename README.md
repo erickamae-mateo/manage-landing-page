@@ -34,12 +34,16 @@ Users should be able to:
 ### Screenshot
 
 ![](./screenshot.jpg)
+![Screenshot 2021-11-05 at 16-08-17 Frontend Mentor Manage landing page](https://user-images.githubusercontent.com/88840940/140478660-d12a4862-892a-4c4b-8b91-56351bd855a2.png)
+
+
+![Screenshot 2021-11-05 at 16-07-52 Frontend Mentor Manage landing page](https://user-images.githubusercontent.com/88840940/140478722-31acedd3-da44-456f-8ef6-89bc609c3762.png)
 
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution: manage-landing-page](https://github.com/erickamae-mateo/manage-landing-page)
+- Live Site URL: [Live site Manage-landing-page](https://erickamae-mateo.github.io/manage-landing-page/)
 
 ## My process
 
