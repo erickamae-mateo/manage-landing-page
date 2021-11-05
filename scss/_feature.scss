@@ -1,0 +1,71 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+
+.feature{
+  margin-top: 50px;
+  overflow-x: hidden;
+
+  @include breakpoints-up(medium){
+     padding-top:50px;
+     padding-left: 75px;
+     padding-right: 75px;
+  }
+
+  @include breakpoints-up(large){
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      background-image: url(../images/bg-tablet-pattern.svg);
+      background-size: 54%;
+      background-repeat: no-repeat;
+      background-position: -296px 330px;
+      min-height: 41.9375rem;
+  }
+}
+.feature h2{
+  text-align: center;
+}
+ .feature_intro h2{
+   @include breakpoints-up(large){
+    text-align: start;
+   }
+ }
+.feature_intro_des{
+  font-size: 1rem;
+  text-align: start;
+}
+.shape{
+ position: absolute;
+  height: 38px;
+  width: 65px;
+  background-color: #f25f3a;
+  border-radius: 50px;
+  border: none;
+  text-align: center;
+  font-weight: bolder;
+  color: white;
+  padding: 0 10px;
+}
+.feature_title{
+
+  margin: 20px auto;
+  text-align:center;
+  background-color: #ffefeb;
+  width: 400px;
+  height:38px;
+  color: #242d52;
+  font-size: 1.0625rem;
+
+  @include breakpoints-up(medium){
+    width: 447px;
+  }
+
+}
+.feature_description {
+  text-align: justify;
+  font-size: 1rem;
+  color: #9698a6;
+  padding-bottom: 3.25rem;
+}
+
+  

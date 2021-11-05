@@ -1,0 +1,80 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+.hero{
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 50px;
+
+    @include breakpoints-up(large){
+        padding-top: 50px;
+    }
+     @include breakpoints-down(sm){
+       
+        &::before {    
+            content: "";
+            position: absolute;
+            background-image: url(../images/bg-tablet-pattern.svg.);
+            background-size: cover;
+            min-height: 250px;
+            top: 63%;
+            left: 232px;
+            right: 0;
+            bottom: -81px;
+            }
+        }
+    img{
+        height: 100vh;
+        width: 100%;
+    }
+    @include breakpoints-up(medium){
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-image: none;
+    }
+}
+    .hero_img{
+        background-image: url(../images/illustration-intro.svg);
+        background-size: 94%;
+        background-repeat: no-repeat;
+        background-position: center right;
+        min-height: 17.275rem;  
+
+
+        @include breakpoints-up(medium){
+        flex: 1;
+        order: 2;
+        width: 40%;
+        min-height: 318px;
+        align-self: end;
+        }
+
+        @include breakpoints-up(large){
+       
+            flex: 1;
+            order: 2;
+            width: 30%;
+            min-height: 465px;
+            align-self: end;
+        }
+
+    }
+
+    .hero_text{
+        position: relative;
+        text-align: center;
+
+            @include breakpoints-up(medium){
+            order: 1;
+            width: 40%;
+            text-align: left;
+            }
+    }
+    .hero_text p{
+        margin-bottom: 1.75em;
+    }
+    .hero .btn_cta{
+        margin-bottom: 6.25em;
+        
+    }
